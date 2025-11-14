@@ -12,7 +12,7 @@
 8. [Data modelling](#Data-modelling)
 9. [Data analysis](#Data-analysis)
 10. [Data Visualization](#Data-Visualization)
-11. [Key Insights](#Key Insights)
+11. [Key Insights](#Key-Insights)
 12. [Recommendation](#Recommendation)
 13. [Conclusion](#Conclusion)
 
@@ -22,10 +22,10 @@ This project analyzes customer churn data for a California-based telecommunicati
 ## **Project Description**
 The project scope covers comprehensive customer data analysis across multiple dimensions including demographics, service types, billing methods, and geographic distribution. The approach involved data exploration, descriptive analytics, correlation analysis, and visualization to address specific business questions that align with stakeholder requirements. The analysis connects customer behavioral data with service characteristics to identify churn drivers.
 
-3. Project Aim
+## **Project Aim**
 To identify the primary drivers of customer churn, segment at-risk customer profiles, quantify the financial impact of churn, and provide actionable recommendations to reduce customer attrition.
 
-4. About the Dataset
+## **About the Dataset**
 Source: STC database
 Record Count: 7,043 rows and 38 columns customers for the telecommunication churn table and for zipcode 1671 rows and two columns
 Key Fields/Columns:
@@ -36,19 +36,19 @@ Key Fields/Columns:
 •	Total Revenue (total revenue, ARPU(Average annual Revenue Per User), churn revenue)
 •	Geographic data (cities, performance by location)
 
-5. Tools Used
+## **Tools Used**
 •	Power BI – For data cleaning, validation, modelling, normalization, interactive dashboard creation and visualization.
 
-6. Importing the Dataset
+## **Importing the Dataset**
 Data (“telecom customer churn and the telecom zip population” tables) were extracted from STC database in CSV format then imported into Power BI. Before loading the data was transformed in power query for cleaning, normalizing, then relationships were created between the customer details and zip code table and then loaded for interactive dashboard development. 
 
-7. Data Cleaning & Transformation
+## **Data Cleaning & Transformation**
 •	Categorical Inputation (Non-Churned Customers): Null entries within the Churn Category with “Customers” since they had the status of stayed and joined which means they are still existing customers and Churn Reason columns were replaced with the descriptive value "N/A". This decision reflects the business logic that an empty value in these specific fields signifies the customer is still active.
 •	Numerical Imputation (Zero Replacement): Null values in quantitative fields, such as “Avg monthly GB download”, were systematically replaced using the zero-inputation method.
 •	Created calculated fields: Generated churn flags, tenure segments, and revenue categories
 •	Validated geographic data: Standardized city names and coordinated with zip code database
 
-8. Data Modeling
+## **Data Modeling**
 Power BI Relationships: After data transformation and normalization, the data was modelled by joining the fact table (telecom customer churn) was joined with the dimension table (telecom_zip_population) on the zip code with a one-to -many relationship
 
 DAX Measures:
@@ -57,7 +57,7 @@ DAX Measures:
 •	Total Customers: Counts the total number of customers.
 •	Average revenue per user: Generates the average revenue for users
 
-9. Data Analysis
+## **Data Analysis**
 Key Metrics & KPIs Analyzed:
 •	Overall churn rate (26.54%) and revenue churn rate (17.24%)
 •	Customer demographics (gender, marital status distribution)
@@ -68,7 +68,7 @@ Key Metrics & KPIs Analyzed:
 •	Geographic performance across 1,106 cities
 •	Revenue impact by customer segment ($3.68M churn revenue)
 
-10. Data Visualization
+## **Data Visualization**
 Dashboard Page 1: Telecom Customer Analysis
 •	KPI Cards: Total Customers (7,043), Churn Rate (26.54%), Total Revenue ($21.37M), Total number of cities (1106) and average monthly charge.
 •	Stacked bar Chart: Churned Customers by Category (Competitor, Dissatisfaction, Attitude, Price, Other).
@@ -89,7 +89,7 @@ Dashboard Page 2: Telecom Churn Service Analysis
 •	Stacked bar chart: Customer tenure segment by status.
 
 
-11. Key Insights
+## **Key Insights**
 Demographic & Contract Insights:
 •	Married customers represent 64% of churned customers, indicating family decision-making impacts retention
 •	Month-to-month contract holders are 3x more likely to churn than customers with annual contracts
@@ -103,7 +103,7 @@ Financial & Geographic Insights:
 •	The 17.24% revenue churn rate indicates loss of high-value customers
 •	ARPU of $3,034.38 suggests significant revenue opportunity in retaining at-risk customers
 
-12. Recommendations
+## **Recommendations**
 Immediate Actions (0-3 months):
 •	Launch targeted retention campaign for Month-to-Month Fiber Optic customers in major metropolitan areas
 •	Implement "First 90 Days" onboarding program with proactive support check-ins
@@ -117,7 +117,7 @@ Long-term Transformations (12+ months):
 •	Establish cross-functional churn task force with representatives from product, support, and marketing
 •	Implement customer success metrics tied to executive compensation
 
-13. Conclusion
+## **Conclusion**
 The analysis reveals that churn is primarily driven by service quality issues in Fiber Optic internet, exacerbated by flexible contract terms that enable easy cancellation. The financial impact is substantial at $3.68M annually, with particular concentration in high-value urban markets. By implementing the recommended strategies focused on service improvement, contract stabilization, and targeted retention, the company can potentially reduce churn by 25% and recover approximately $900,000 in annual revenue while strengthening customer loyalty in core markets.
 
 
