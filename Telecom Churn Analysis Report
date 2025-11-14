@@ -2,7 +2,7 @@
 
 ## **Table of Contents**
 
-1. Introduction
+1. [Introduction](#introduction)  
 2. Project Description
 3. Project Aim
 4. About 
@@ -16,7 +16,7 @@
 12. Recommendation
 13. Conclusion
 
-1. Introduction
+## **Introduction**
 This project analyzes customer churn data for a California-based telecommunications company serving over 7,000 customers. Customer churn represents a critical business challenge, directly impacting revenue, marketing ROI, and long-term growth. The analysis identifies patterns in customer behavior, service usage, and demographic factors to understand why customers leave and provide data-driven strategies for retention.
 
 2. Project Description
