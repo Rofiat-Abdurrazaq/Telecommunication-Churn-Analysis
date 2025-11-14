@@ -3,23 +3,23 @@
 ## **Table of Contents**
 
 1. [Introduction](#introduction)  
-2. Project Description
-3. Project Aim
-4. About 
-5. Tools Used
-6. Data importation
-7. Data cleaning and transformation
-8. Data modelling
-9. Data analysis 
-10. Data Visualization 
-11. Key Insights
-12. Recommendation
-13. Conclusion
+2. [Project Description](#Project Description)
+3. [Project Aim](#Project Aim)
+4. [About](#About)
+5. [Tools Used](#Tools Used)
+6. [Data importation](#Data importation)
+7. [Data cleaning and transformation](#Data cleaning and transformation)
+8. [Data modelling](#Data modelling)
+9. [Data analysis](#Data analysis)
+10. [Data Visualization](#Data Visualization)
+11. [Key Insights](#Key Insights)
+12. [Recommendation](#Recommendation)
+13. [Conclusion](#Conclusion)
 
 ## **Introduction**
 This project analyzes customer churn data for a California-based telecommunications company serving over 7,000 customers. Customer churn represents a critical business challenge, directly impacting revenue, marketing ROI, and long-term growth. The analysis identifies patterns in customer behavior, service usage, and demographic factors to understand why customers leave and provide data-driven strategies for retention.
 
-2. Project Description
+## **Project Description**
 The project scope covers comprehensive customer data analysis across multiple dimensions including demographics, service types, billing methods, and geographic distribution. The approach involved data exploration, descriptive analytics, correlation analysis, and visualization to address specific business questions that align with stakeholder requirements. The analysis connects customer behavioral data with service characteristics to identify churn drivers.
 
 3. Project Aim
