@@ -4,7 +4,7 @@
 
 1. [Introduction](#introduction)  
 2. [Project Description](#Project-Description)
-3. [Project Aim](#Project-Aim)
+3. [Business Questions](#Business-Questions)
 4. [About](#About)
 5. [Tools Used](#Tools-Used)
 6. [Data importation](#Data-importation)
@@ -22,8 +22,13 @@ This project analyzes customer churn data for a California-based telecommunicati
 ## **Project Description**
 The project scope covers comprehensive customer data analysis across multiple dimensions including demographics, service types, billing methods, and geographic distribution. The approach involved data exploration, descriptive analytics, correlation analysis, and visualization to address specific business questions that align with stakeholder requirements. The analysis connects customer behavioral data with service characteristics to identify churn drivers.
 
-## **Project Aim**
-To identify the primary drivers of customer churn, segment at-risk customer profiles, quantify the financial impact of churn, and provide actionable recommendations to reduce customer attrition.
+## **Business Question**
+1. Is our service portfolio failing us? Which specific service (e.g., Fiber Optic internet, online security, streaming) is most strongly associated with customers leaving?
+2. What is the gender distribution of churned customers?
+3. What is our exact customer churn rate?
+4. Do specific payment methods or billing structures correlate with higher churn rates?
+5. What are the common demographics (like age, gender, Marital status) and contract characteristics (month-to-month vs. yearly) of customers who churn?
+6. Does tenure contribute to churn rate?
 
 ## **About the Dataset**
 Source: SkillsToCareer database
@@ -74,6 +79,8 @@ Key Metrics & KPIs Analyzed:
 
 ## **Data Visualization**
 Dashboard Page 1: Telecom Customer Analysis
+<img width="874" height="488" alt="image" src="https://github.com/user-attachments/assets/df7a8c82-bf1b-49b5-9c7d-99463639da1c" />
+
 -	KPI Cards: Total Customers (7,043), Churn Rate (26.54%), Total Revenue ($21.37M), Number of Cities (1,106), Avg Monthly Charge ($63.60).
 -	Stacked bar Chart: Churned Customers by Category (Competitor, Dissatisfaction, Attitude, Price, Other).
 -	Donut Chart: Gender Distribution by churn customers
@@ -83,6 +90,8 @@ Dashboard Page 1: Telecom Customer Analysis
 -	Stacked Bar Chart: bottom 10 cities by revenue
 
 Dashboard Page 2: Telecom Churn Service Analysis
+<img width="860" height="484" alt="image" src="https://github.com/user-attachments/assets/d6e46fad-da36-49ad-85a7-61ec2475d565" />
+
 -	KPI Cards: Total Customers (7,043), Total Revenue ($21.37M), Churned Revenue ($3.68M), Churn Rate (26.54%), annual average rate per user ($3034.38)
 -	Stacked Bar Chart: Churned Customers by Internet Type (Fiber Optic: 1,236, DSL: 307, Cable: 213)
 -	Donut Chart: Customers by Paperless Billing (Yes: 25.08%, No: 74.91%)
