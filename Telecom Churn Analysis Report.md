@@ -26,8 +26,12 @@ The project scope covers comprehensive customer data analysis across multiple di
 To identify the primary drivers of customer churn, segment at-risk customer profiles, quantify the financial impact of churn, and provide actionable recommendations to reduce customer attrition.
 
 ## **About the Dataset**
-Source: STC database
-Record Count: 7,043 rows and 38 columns customers for the telecommunication churn table and for zipcode 1671 rows and two columns
+Source: SkillsToCareer database
+
+Record Count: 
+- Telecom Customer Churn Table: 7,043 rows, 38 columns.
+- Zip Code Population Table: 1,671 rows, 2 columns.
+
 Key Fields/Columns:
 -	Customer demographics (gender, marital status, location)
 -	Service details (internet type, contract type, monthly charges)
@@ -37,22 +41,22 @@ Key Fields/Columns:
 -	Geographic data (cities, performance by location)
 
 ## **Tools Used**
-Power BI – For data cleaning, validation, modelling, normalization, interactive dashboard creation and visualization.
-
+- Power BI: Used for end-to-end data processing, including cleaning, transformation, data modeling, and the creation of interactive dashboards and visualizations.
+  
 ## **Importing the Dataset**
-Data (“telecom customer churn and the telecom zip population” tables) were extracted from STC database in CSV format then imported into Power BI. Before loading the data was transformed in power query for cleaning, normalizing, then relationships were created between the customer details and zip code table and then loaded for interactive dashboard development. 
+The "telecom customer churn" and "telecom zipcode population" tables were extracted as *.CSV* files from the STC database and imported into Power BI's Power Query Editor. The data was transformed and cleaned before being loaded into the data model, where relationships were established to enable interactive dashboard development.
 
 ## **Data Cleaning & Transformation**
--	Categorical Inputation (Non-Churned Customers): Null entries within the Churn Category with “Customers” since they had the status of stayed and joined which means they are still existing customers and Churn Reason columns were replaced with the descriptive value "N/A". This decision reflects the business logic that an empty value in these specific fields signifies the customer is still active.
--	Numerical Imputation (Zero Replacement): Null values in quantitative fields, such as “Avg monthly GB download”, were systematically replaced using the zero-inputation method.
--	Created calculated fields: Generated churn flags, tenure segments, and revenue categories
--	Validated geographic data: Standardized city names and coordinated with zip code database
+-	Categorical Inputation (Non-Churned Customers): Null entries within the Churn Category were replaced with “Customers” since their status was *stayed and joined* which means they are still existing customers, and Churn Reason columns were replaced with the descriptive value *"N/A"*. This decision reflects the business logic that an empty value in these specific fields signifies the customer is still active. Some null values were found in other services columns that were replaced with *"unverified"* because they were a boolean response of *"yes or no"*.
+-	Numerical Imputation (Zero Replacement): Null values in quantitative fields, such as *Avg Monthly GB Download*, were replaced with 0.
+-	Created calculated fields: Generated churn flags, tenure segments, and revenue categories.
+-	Geographic Validation: Standardized city names and ensured proper coordination with the zip code database.
 
 ## **Data Modeling**
-Power BI Relationships: After data transformation and normalization, the data was modelled by joining the fact table (telecom customer churn) was joined with the dimension table (telecom_zip_population) on the zip code with a one-to -many relationship
+Power BI Relationships: Established a *one-to-many* relationship between the telecom_zipcode_population dimension table and the telecom_customer_churn fact table using the Zip Code field.
 
 DAX Measures:
--	Churn rate: Calculate the percentage of customers who churned
+-	Churn rate:  Calculates the percentage of customers who churned.
 -	Churn Revenue: Total amount of revenue lost due to churning
 -	Total Customers: Counts the total number of customers.
 -	Average revenue per user: Generates the average revenue for users
@@ -70,7 +74,7 @@ Key Metrics & KPIs Analyzed:
 
 ## **Data Visualization**
 Dashboard Page 1: Telecom Customer Analysis
--	KPI Cards: Total Customers (7,043), Churn Rate (26.54%), Total Revenue ($21.37M), Total number of cities (1106) and average monthly charge.
+-	KPI Cards: Total Customers (7,043), Churn Rate (26.54%), Total Revenue ($21.37M), Number of Cities (1,106), Avg Monthly Charge ($63.60).
 -	Stacked bar Chart: Churned Customers by Category (Competitor, Dissatisfaction, Attitude, Price, Other).
 -	Donut Chart: Gender Distribution by churn customers
 -	Stacked column Chart: Churn by Contract Type (Month-to-Month, One Year, Two Year)
@@ -97,21 +101,31 @@ Dashboard Page 2: Telecom Churn Service Analysis
 - Geographic Financial Risk: Top revenue-generating cities like Los Angeles and San Diego are also the largest sources of churned customers, representing the highest absolute financial risk.
 - Value Customer Loss: The 17.24% Revenue Churn Rate confirms that the company is losing high-value customers, not just low-revenue accounts.
 
-## **Recommendations**
-Immediate Actions (0-3 months):
-•	Launch targeted retention campaign for Month-to-Month Fiber Optic customers in major metropolitan areas
-•	Implement "First 90 Days" onboarding program with proactive support check-ins
-•	Create contract conversion incentives to move high-risk customers to annual agreements
-Strategic Initiatives (3-12 months):
-•	Conduct comprehensive Fiber Optic service quality review and infrastructure assessment
-•	Develop bundled service packages including Online Security to increase customer stickiness
-•	Redesign billing communications for paperless billing customers to enhance engagement
-Long-term Transformations (12+ months):
-•	Build predictive churn modeling capability for proactive intervention
-•	Establish cross-functional churn task force with representatives from product, support, and marketing
-•	Implement customer success metrics tied to executive compensation
+## **Recommendations by Stakeholders**
+- CEO & Executive Team: Prioritize resolving the Fiber Optic service issues, combining a competitive market analysis and interviews, to understand why customers are leaving in cities like San Diego, Los Angeles.
+- Head of Marketing:
+Immediately launch a "Save & Secure" campaign targeting only Month-to-Month Fiber Optic customers in the top 5 churn cities (e.g., San Diego, Los Angeles), offering a guaranteed service credit to switch to an annual contract.
+Pause all generic Fiber Optic acquisition campaigns in high-churn zip codes until the service quality review is complete, to avoid acquiring customers who will quickly leave.
+
+Head of Customer Service:
+Establish a dedicated "Fiber Optic Retention Desk" with trained specialists and expedited resolution paths to handle issues from this segment.
+Implement a mandatory "Day 7 and Day 30" check-in call for all new Fiber Optic installations to proactively identify and resolve early-stage problems.
+
+Product & Service Development Team:
+Conduct a root-cause analysis of Fiber Optic support tickets to identify the top 3 technical or experience failures (e.g., installation delays, speed inconsistencies).
+Accelerate the development of a "Fiber Plus" bundle that includes premium support and a service-level agreement to justify a higher price and improve perceived value.
+
+Finance Team:
+Model the 3-year ROI of the proposed service improvements and retention campaigns against the $3.68M baseline of lost revenue to secure necessary funding.
+Work with BI to refine the Customer Lifetime Value (CLV) model to clearly identify the profitability of Fiber Optic customers, making the business case for their retention undeniable.
+
+
 
 ## **Conclusion**
-The analysis reveals that churn is primarily driven by service quality issues in Fiber Optic internet, exacerbated by flexible contract terms that enable easy cancellation. The financial impact is substantial at $3.68M annually, with particular concentration in high-value urban markets. By implementing the recommended strategies focused on service improvement, contract stabilization, and targeted retention, the company can potentially reduce churn by 25% and recover approximately $900,000 in annual revenue while strengthening customer loyalty in core markets.
+The analysis confirms that customer churn is primarily driven by performance issues in the Fiber Optic internet service, intensified by flexible Month-to-Month contracts that allow dissatisfied customers to leave with ease. Fiber Optic alone accounts for 1,236 churned customers—far exceeding all other services—especially in competitive markets like San Diego and Los Angeles. A significant portion of these customers are not just leaving the service—they are switching to competitors. This signals a deeper market problem: our Fiber Optic offering is not meeting customer expectations compared to alternatives. The financial impact is substantial, with an estimated $3.68M in annual revenue lost.
+
+To reverse this trend, the company must focus on improving service performance, strengthening contract structures, and implementing proactive retention strategies. Targeted promotional offers can also help stabilize customers currently on Month-to-Month plans. Most importantly, a thorough market and competitor analysis is essential. Understanding why customers prefer competing providers—and where our product experience falls short—will guide the redesign of the Fiber Optic service and ensure we address the true root causes of churn. With these actions, the company can realistically reduce churn by about 25% and recover roughly $900,000 annually while rebuilding customer trust and loyalty.
+
+
 
 
