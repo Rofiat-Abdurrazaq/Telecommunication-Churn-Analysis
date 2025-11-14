@@ -102,29 +102,17 @@ Dashboard Page 2: Telecom Churn Service Analysis
 - Value Customer Loss: The 17.24% Revenue Churn Rate confirms that the company is losing high-value customers, not just low-revenue accounts.
 
 ## **Recommendations by Stakeholders**
-- CEO & Executive Team: Prioritize resolving the Fiber Optic service issues, combining a competitive market analysis and interviews, to understand why customers are leaving in cities like San Diego, Los Angeles.
-- Head of Marketing:
-Immediately launch a "Save & Secure" campaign targeting only Month-to-Month Fiber Optic customers in the top 5 churn cities (e.g., San Diego, Los Angeles), offering a guaranteed service credit to switch to an annual contract.
-Pause all generic Fiber Optic acquisition campaigns in high-churn zip codes until the service quality review is complete, to avoid acquiring customers who will quickly leave.
-
-Head of Customer Service:
-Establish a dedicated "Fiber Optic Retention Desk" with trained specialists and expedited resolution paths to handle issues from this segment.
-Implement a mandatory "Day 7 and Day 30" check-in call for all new Fiber Optic installations to proactively identify and resolve early-stage problems.
-
-Product & Service Development Team:
-Conduct a root-cause analysis of Fiber Optic support tickets to identify the top 3 technical or experience failures (e.g., installation delays, speed inconsistencies).
-Accelerate the development of a "Fiber Plus" bundle that includes premium support and a service-level agreement to justify a higher price and improve perceived value.
-
-Finance Team:
-Model the 3-year ROI of the proposed service improvements and retention campaigns against the $3.68M baseline of lost revenue to secure necessary funding.
-Work with BI to refine the Customer Lifetime Value (CLV) model to clearly identify the profitability of Fiber Optic customers, making the business case for their retention undeniable.
-
+- CEO & Executive Team: Prioritize resolving the Fiber Optic service issues, combining a competitive market analysis and interviews, to understand why customers are leaving in cities like San Diego and Los Angeles.
+- Head of Marketing:  Immediately launch two campaigns; a short-term promotion for Month-to-Month Fiber customers to reduce churn without eliminating the product, and a long-term project to conduct interviews with churned customers to pinpoint if they left for competitors, price, or service quality.
+-  Head of Customer Service: Create a fast-track support specifically for Fiber Optic customers, especially in the San Diego branch
+- Product & Service Development Team: Conduct a root-cause analysis of Fiber Optic support tickets to identify the top 3 technical or experience failures (e.g., installation delays, speed inconsistencies).
+- Finance Team: Provide funding for the proposed retention campaigns and market research by modeling their cost against the $3.68M in lost revenue, and work with product teams to analyze the profitability of the Month-to-Month segment to determine if it's worth saving. 
 
 
 ## **Conclusion**
-The analysis confirms that customer churn is primarily driven by performance issues in the Fiber Optic internet service, intensified by flexible Month-to-Month contracts that allow dissatisfied customers to leave with ease. Fiber Optic alone accounts for 1,236 churned customers—far exceeding all other services—especially in competitive markets like San Diego and Los Angeles. A significant portion of these customers are not just leaving the service—they are switching to competitors. This signals a deeper market problem: our Fiber Optic offering is not meeting customer expectations compared to alternatives. The financial impact is substantial, with an estimated $3.68M in annual revenue lost.
+The analysis confirms that customer churn is primarily driven by performance issues in the Fiber Optic internet service, intensified by flexible Month-to-Month contracts that allow dissatisfied customers to leave with ease. Fiber Optic alone accounts for 1,236 churned customers, exceeding all other services, especially in competitive markets like San Diego and Los Angeles. A significant portion of these customers are not just leaving the service; they are switching to competitors. This signals a deeper market problem: our Fiber Optic offering is not meeting customer expectations compared to alternatives. The financial impact is substantial, with an estimated $3.68M in annual revenue lost.
 
-To reverse this trend, the company must focus on improving service performance, strengthening contract structures, and implementing proactive retention strategies. Targeted promotional offers can also help stabilize customers currently on Month-to-Month plans. Most importantly, a thorough market and competitor analysis is essential. Understanding why customers prefer competing providers—and where our product experience falls short—will guide the redesign of the Fiber Optic service and ensure we address the true root causes of churn. With these actions, the company can realistically reduce churn by about 25% and recover roughly $900,000 annually while rebuilding customer trust and loyalty.
+To reverse this trend, the company must focus on improving service performance, strengthening contract structures, and implementing proactive retention strategies. Targeted promotional offers can also help stabilize customers currently on Month-to-Month plans. Most importantly, a thorough market and competitor analysis is essential. Understanding why customers prefer competing providers and where our product experience falls short will guide the redesign of the Fiber Optic service and ensure we address the true root causes of churn. With these actions, the company can realistically reduce churn by about 25% and recover roughly $900,000 annually while rebuilding customer trust and loyalty.
 
 
 
