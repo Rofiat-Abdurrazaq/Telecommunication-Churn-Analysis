@@ -79,7 +79,8 @@ Key Metrics & KPIs Analyzed:
 
 ## **Data Visualization**
 Dashboard Page 1: Telecom Customer Analysis
-<img width="874" height="488" alt="image" src="https://github.com/user-attachments/assets/df7a8c82-bf1b-49b5-9c7d-99463639da1c" />
+<img width="872" height="485" alt="image" src="https://github.com/user-attachments/assets/71e39ec3-b4d1-4279-8020-b66345a87247" />
+
 
 -	KPI Cards: Total Customers (7,043), Churn Rate (26.54%), Total Revenue ($21.37M), Number of Cities (1,106), Avg Monthly Charge ($63.60).
 -	Stacked bar Chart: Churned Customers by Category (Competitor, Dissatisfaction, Attitude, Price, Other).
